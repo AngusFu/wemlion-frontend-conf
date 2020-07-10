@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-wemlion",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "自定义 eslint 规则",
   "author": "wemlion <angusfu1126@qq.com>",
   "license": "MIT",

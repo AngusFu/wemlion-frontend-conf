@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-wemlion",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "stylelint 配置",
   "author": "wemlion <angusfu1126@qq.com>",
   "license": "MIT",
