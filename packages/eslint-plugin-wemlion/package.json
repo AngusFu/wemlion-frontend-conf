@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-wemlion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "自定义 eslint 规则",
   "bugs": {
     "url": "https://github.com/AngusFu/wemlion-frontend-conf/issues"

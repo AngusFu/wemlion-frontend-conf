@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-library-aliases",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ImportDeclaration 成员重定向",
   "bugs": {
     "url": "https://github.com/AngusFu/wemlion-frontend-conf/issues"

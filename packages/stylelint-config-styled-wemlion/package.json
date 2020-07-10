@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-styled-wemlion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "stylelint 配置",
   "bugs": {
     "url": "https://github.com/AngusFu/wemlion-frontend-conf/issues"
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-config-wemlion": "^0.0.1",
+    "stylelint-config-wemlion": "^0.0.2",
     "stylelint-processor-styled-components": "^1.10.0"
   },
   "publishConfig": {
