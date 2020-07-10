@@ -1,3 +1,3 @@
 # wemlion-frontend-conf
 
-个人常用的 `eslint` `stylelint` 配置。
+Personal eslint/stylelint/babel plugin/configs.
