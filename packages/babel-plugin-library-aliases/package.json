@@ -2,12 +2,22 @@
   "name": "babel-plugin-library-aliases",
   "version": "0.0.1",
   "description": "ImportDeclaration 成员重定向",
-  "author": "wemlion <angusfu1126@qq.com>",
+  "bugs": {
+    "url": "https://github.com/AngusFu/wemlion-frontend-conf/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngusFu/wemlion-frontend-conf.git"
+  },
   "license": "MIT",
+  "author": "wemlion <angusfu1126@qq.com>",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
+  "peerDependencies": {
+    "@babel/core": "^7.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -16,8 +26,5 @@
       "name": "wemlion",
       "email": "angusfu1126@qq.com"
     }
-  ],
-  "peerDependencies": {
-    "@babel/core": "^7.0.0"
-  }
+  ]
 }

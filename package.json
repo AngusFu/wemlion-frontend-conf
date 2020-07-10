@@ -1,10 +1,19 @@
 {
   "name": "wemlion-frontend-conf",
   "private": true,
+  "description": "Personal eslint/stylelint/babel plugin/configs.",
+  "homepage": "https://github.com/AngusFu/wemlion-frontend-conf#readme",
+  "bugs": {
+    "url": "https://github.com/AngusFu/wemlion-frontend-conf/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngusFu/wemlion-frontend-conf.git"
+  },
+  "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
-  "license": "MIT",
   "devDependencies": {
     "lerna": "3.21.0",
     "prettier": "2.0.5"

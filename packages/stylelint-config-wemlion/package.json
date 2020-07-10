@@ -2,8 +2,15 @@
   "name": "stylelint-config-wemlion",
   "version": "0.0.1",
   "description": "stylelint 配置",
-  "author": "wemlion <angusfu1126@qq.com>",
+  "bugs": {
+    "url": "https://github.com/AngusFu/wemlion-frontend-conf/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngusFu/wemlion-frontend-conf.git"
+  },
   "license": "MIT",
+  "author": "wemlion <angusfu1126@qq.com>",
   "main": "lib/index.js",
   "files": [
     "lib"
