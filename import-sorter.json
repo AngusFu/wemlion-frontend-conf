@@ -1,0 +1,21 @@
+{
+  "generalConfiguration.sortOnBeforeSave": true,
+  "generalConfiguration.exclude": ["src/index.tsx"],
+  "importStringConfiguration.maximumNumberOfImportExpressionsPerLine.type": "newLineEachExpressionAfterCountLimitExceptIfOnlyOne",
+  "importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 80,
+  "importStringConfiguration.tabSize": 2,
+  "sortConfiguration.customOrderingRules.rules": [
+    {
+      "regex": "^[.*]",
+      "orderLevel": 40
+    },
+    {
+      "regex": "^../",
+      "orderLevel": 50
+    },
+    {
+      "regex": "^./",
+      "orderLevel": 60
+    }
+  ]
+}

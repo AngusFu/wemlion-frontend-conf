@@ -1,0 +1,23 @@
+{
+  "name": "babel-plugin-library-aliases",
+  "version": "0.0.0",
+  "description": "ImportDeclaration 成员重定向",
+  "author": "wemlion <angusfu1126@qq.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "maintainers": [
+    {
+      "name": "wemlion",
+      "email": "angusfu1126@qq.com"
+    }
+  ],
+  "peerDependencies": {
+    "@babel/core": "^7.0.0"
+  }
+}

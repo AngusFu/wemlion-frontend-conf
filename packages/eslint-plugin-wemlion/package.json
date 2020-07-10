@@ -1,0 +1,29 @@
+{
+  "name": "eslint-plugin-wemlion",
+  "version": "0.0.0",
+  "description": "自定义 eslint 规则",
+  "author": "wemlion <angusfu1126@qq.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.6"
+  },
+  "peerDependencies": {
+    "eslint": "^7.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "maintainers": [
+    {
+      "name": "wemlion",
+      "email": "angusfu1126@qq.com"
+    }
+  ]
+}

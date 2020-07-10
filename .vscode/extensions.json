@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "steoates.autoimport",
+    "mike-co.import-sorter",
+    "mikestead.dotenv",
+    "mubaidr.vuejs-extension-pack",
+    "esbenp.prettier-vscode",
+    "tombonnike.vscode-status-bar-format-toggle",
+    "stylelint.vscode-stylelint",
+    "jpoissonnier.vscode-styled-components",
+    "EditorConfig.EditorConfig",
+    "aaron-bond.better-comments",
+    "Gruntfuggly.todo-tree"
+  ]
+}

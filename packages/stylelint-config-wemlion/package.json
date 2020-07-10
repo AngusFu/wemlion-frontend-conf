@@ -1,0 +1,29 @@
+{
+  "name": "stylelint-config-wemlion",
+  "version": "0.0.0",
+  "description": "stylelint 配置",
+  "author": "wemlion <angusfu1126@qq.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "maintainers": [
+    {
+      "name": "wemlion",
+      "email": "angusfu1126@qq.com"
+    }
+  ]
+}
