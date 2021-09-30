@@ -13,30 +13,45 @@ module.exports = function (babel) {
         const opts = state.opts || {};
         const libraries = Object.keys(opts);
 
-        if (libraries.includes(node.source.value) === false) return;
+        if (libraries.includes(node.source.value) === false) {
+          return;
+        }
 
         const config = opts[node.source.value];
         const components = Object.keys(config.aliases);
-        const specifiers = node.specifiers.filter(
-          s =>
-            t.isImportSpecifier(s) &&
-            components.some(
+
+        const specifiers = node.specifiers.filter(s => {
+          if (t.isImportSpecifier(s)) {
+            return components.some(
               name =>
                 s.imported.name === name &&
-                config.ignore(s.imported, s.local) === false
-            )
-        );
+                (config.ignore ? !config.ignore(s.imported, s.local) : true)
+            );
+          }
+
+          if (t.isImportDefaultSpecifier(s)) {
+            return components.some(
+              name =>
+                'default' === name &&
+                (config.ignore ? !config.ignore(null, s.local) : true)
+            );
+          }
+
+          return false;
+        });
 
         const imports = [];
 
         specifiers.forEach(specifier => {
-          if (specifier && t.isImportSpecifier(specifier)) {
-            // 目前只能应对 `import { A, B as b } from 'antd'` 这种情况
-            // 下面两种 理论上也能应对 不过暂时不太想写
-            // - `import antd from 'antd'`
-            // - `import { default as AntDesign } from 'antd'`
+          let importName = '';
 
-            const importName = specifier.imported.name;
+          if (specifier && t.isImportDefaultSpecifier(specifier)) {
+            importName = 'default';
+          } else if (specifier && t.isImportSpecifier(specifier)) {
+            importName = specifier.imported.name;
+          }
+
+          if (importName) {
             const target = config.aliases[importName];
             const [source, name] = target.split('#');
 
@@ -45,7 +60,6 @@ module.exports = function (babel) {
                 [
                   t.importSpecifier(
                     specifier.local,
-
                     t.Identifier(name || importName)
                   )
                 ],
