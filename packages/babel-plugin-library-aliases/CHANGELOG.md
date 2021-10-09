@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/AngusFu/wemlion-frontend-conf/compare/babel-plugin-library-aliases@0.0.2...babel-plugin-library-aliases@0.1.0) (2021-10-09)
+
+
+### Features
+
+* fix: support import default specifiers ([f61ad7a](https://github.com/AngusFu/wemlion-frontend-conf/commit/f61ad7ad2fdfac3fc8ce035b4c84a37707b568cf))
+
+
+
+
+
 ## [0.0.2](https://github.com/AngusFu/wemlion-frontend-conf/compare/babel-plugin-library-aliases@0.0.1...babel-plugin-library-aliases@0.0.2) (2020-07-10)
 
 
