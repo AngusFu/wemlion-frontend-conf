@@ -1,2 +1,2 @@
-# `@stylelint-config-styled-wemlion`
+# `stylelint-config-styled-wemlion`
 
