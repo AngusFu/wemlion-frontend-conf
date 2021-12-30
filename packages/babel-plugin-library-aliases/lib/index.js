@@ -54,17 +54,17 @@ module.exports = function (babel) {
           if (importName) {
             const target = config.aliases[importName];
             const [source, name] = target.split('#');
+            const imported = name || importName;
+            const newSpecifier =
+              imported === 'default'
+                ? t.importDefaultSpecifier(specifier.local)
+                : t.importSpecifier(
+                    specifier.local,
+                    t.identifier(name || importName)
+                  );
 
             imports.push(
-              t.importDeclaration(
-                [
-                  t.importSpecifier(
-                    specifier.local,
-                    t.Identifier(name || importName)
-                  )
-                ],
-                t.stringLiteral(source)
-              )
+              t.importDeclaration([newSpecifier], t.stringLiteral(source))
             );
 
             node.specifiers = node.specifiers.filter(s => s !== specifier);
